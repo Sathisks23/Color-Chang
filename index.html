@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        container{
+            margin:200px auto ;
+            display: flex;
+            justify-content: center;
+           
+        }
+         tr,td,th{
+            padding:10px  30px;
+        }
+
+    </style>
+</head>
+<body>
+    <container>
+        <div class="form_div">
+
+            <form   id="form" autocomplete="off">
+                <label for="p_code">Product Code</label>
+                <input type="text" required id="p_code"><br><br>
+
+                <label for="p_name">Product Name</label>
+                <input type="text" required id="p_name"><br><br>
+
+                <label for="p_quan">Product Quantity</label>
+                <input type="number" required id="p_quan"><br><br>
+
+                <label for="p_price">Product Price</label>
+                <input type="number" required id="p_price"><br><br>
+
+                <input type="reset">
+            <input  id='submit' type="submit">
+
+            </form>
+            <!-- <button  onclick="reset()">Reset</button> -->
+            
+        </div>
+        <div class="output_div">
+               <table id="table">
+                <tr>
+                    <th>Product Code</th>
+                    <th>Product Name</th>
+                    <th>Product Quantity</th>
+                    <th>Product Price</th>
+                </tr>
+               
+               
+               </table>
+        </div>
+
+
+    </container>
+<script src="index.js"></script>
+</body>
+</html>
